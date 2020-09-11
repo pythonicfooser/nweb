@@ -7,7 +7,7 @@ node {
         def nwebImage = docker.build("nweb:master")
     }
     stage('Run Docker image'){
-	sh 'docker rm -f nweb'
+	# sh 'docker rm -f nweb'
         sh 'docker run -d -n nweb -p 7000:7000 --rm nweb:master'
     }
 }

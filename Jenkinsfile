@@ -4,9 +4,9 @@ node {
         BRANCH_NAME=env.BRANCH_NAME
     }
     stage('Build Docker image'){
-        def nwebImage = docker.build("nweb:${BRANCH_NAME}")
+        def nwebImage = docker.build("nweb:${env.BUILD_NUMBER}")
     }
     stage('Run Docker image'){
-        sh 'docker run -p 7000:7000 --rm nweb:$BRANCH_NAME'
+        sh 'docker run -p 7000:7000 --rm nweb:${env.BUILD_NUMBER}'
     }
 }

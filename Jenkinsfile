@@ -7,6 +7,6 @@ node {
         def nwebImage = docker.build("nweb:${env.BUILD_NUMBER}")
     }
     stage('Run Docker image'){
-        sh 'docker run -p 7000:7000 --rm nweb:${env.BUILD_NUMBER}'
+        sh 'docker run -p 7000:7000 --rm nweb:${BUILD_NUMBER}'
     }
 }

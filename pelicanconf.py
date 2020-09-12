@@ -6,7 +6,7 @@ SITENAME = 'Northtek'
 SITEURL = ''
 
 STATIC_PATHS = ['images']
-THEME = "./pelican-themes/pelican-blueidea"
+THEME = "./themes/pelican-blueidea"
 
 PATH = 'content'
 

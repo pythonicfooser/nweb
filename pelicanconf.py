@@ -2,8 +2,11 @@
 # -*- coding: utf-8 -*- #
 
 AUTHOR = 'fooser'
-SITENAME = 'northtek'
+SITENAME = 'Northtek'
 SITEURL = ''
+
+STATIC_PATHS = ['images']
+THEME = "/home/fooser/pelican-themes/pelican-blueidea"
 
 PATH = 'content'
 

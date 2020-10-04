@@ -98,5 +98,5 @@ Where the "ENTRYPOINT" will be /bin/sleep and the CMD (acting like a param) will
 
 ###Extra info:
 
-..* CMD -> Could be more than one on the Dockerfile, but only te last one will be executed.
-..* ENTRYPOINT -> Only one per Dockerfile. Same as CMD, last will be executed.
+* CMD -> Could be more than one on the Dockerfile, but only te last one will be executed.
+* ENTRYPOINT -> Only one per Dockerfile. Same as CMD, last will be executed.

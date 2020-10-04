@@ -18,15 +18,21 @@ CMD executable param1 param2
 The differences between these CMD instructions is that on first CMD, we could specify the full path of the binary to avoid "spawning" a shell.
 If the use:
 
+```
 CMD ["/bin/ping", "-c 3 unizar.es"]
+```
 
 We will use the ping executable without using a sh shell. If we use with approach:
 
+```
 CMD ping -c 3 unizar.es
+```
 
 We will be executing:
 
+```
 /bin/sh ping -c 3 unizar.es
+```
 
 When we run a container, alpine as an example, we could check the default CMD that will be executed:
 
@@ -92,5 +98,5 @@ Where the "ENTRYPOINT" will be /bin/sleep and the CMD (acting like a param) will
 
 ###Extra info:
 
-CMD -> Could be more than one on the Dockerfile, but only te last one will be executed
+CMD -> Could be more than one on the Dockerfile, but only te last one will be executed.
 ENTRYPOINT -> Only one per Dockerfile. Same as CMD, last will be executed.

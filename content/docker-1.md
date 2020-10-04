@@ -1,6 +1,6 @@
 Title: Docker Image creation, 1
 Date: 2020-10-03 19:15
-Category: Docker Images
+Category: Docker
 
 # Docker image creation, 1
 

@@ -6,8 +6,6 @@ Category: Docker
 
 INTRO: This is a brief introduction to some options that are available to create new images from running containers.
 
-Create Docker image from running container:
-
 We could start a test container, like:
 
 ```shell
